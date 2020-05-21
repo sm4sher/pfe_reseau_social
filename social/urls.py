@@ -23,6 +23,6 @@ import social.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('oauth2/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    #path('api/', include('api.urls')),
+    path('api/', include('api.urls')),
     path('', TemplateView.as_view(template_name="social/app.html"), name="app",),
 ]

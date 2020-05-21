@@ -3,17 +3,18 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import App from './App.vue'
 
-Vue.config.productionTip = false
+import Home from './components/Home.vue'
+//Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
 
 const routes = [
-	// {
-	// 	name: 'home',
-	// 	path: '/',
-	// 	component: Home,
-	// },
+	{
+		name: 'home',
+		path: '/',
+		component: Home,
+	},
 	// {
 	// 	name: 'login',
 	// 	path: '/login',
@@ -35,30 +36,20 @@ const router = new VueRouter({
 	routes,
 })
 
+Vue.filter('formatDateTime', function(value) {
+  if (value) {
+    return new Date(parseInt(value)).toLocaleTimeString(); //Value peut être String ou int
+  }
+})
+
 const store = new Vuex.Store({
 	state: {
 		user: {
 			id: 1,
 			username: 'test',
-			timeline: {
-				posts: [
-					{
-						id: 1,
-						author: null,
-						text: "test post1",
-					},
-					{
-						id: 2,
-						author: null,
-						text: "test post2",
-					},
-					{
-						id: 3,
-						author: null,
-						text: "test post3",
-					},
-				],
-			},
+			profile: {
+				picture: "/static/social/img/profile_default.jpeg",
+			}
 		},
 	},
 })

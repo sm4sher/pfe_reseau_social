@@ -1,0 +1,83 @@
+[
+  {
+    "model": "api.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$2H4bpZoyeHao$cU9dndkXWwiRp9ruiBBcG7+sp3tp25SfyJX6lNf4uZ4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user1",
+      "first_name": "",
+      "last_name": "",
+      "email": "user1@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-05-20T21:43:32.245Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$y6a8xdX3q38w$P+WmSqWkZj/sHrfXlCGA6pp02n459UDOjBmggl11WLE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user2",
+      "first_name": "",
+      "last_name": "",
+      "email": "user2@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-05-20T21:46:58.159Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "display_name": "User 1",
+      "bio": "Bonjour, je suis User 1"
+    }
+  },
+  {
+    "model": "api.profile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "display_name": "User 2",
+      "bio": "Bonjour, je suis User 2"
+    }
+  },
+  {
+    "model": "api.post",
+    "pk": 1,
+    "fields": {
+      "author": 1,
+      "text": "First post!",
+      "created": "2020-05-20T21:46:23.760Z"
+    }
+  },
+  {
+    "model": "api.post",
+    "pk": 2,
+    "fields": {
+      "author": 1,
+      "text": "Second post!",
+      "created": "2020-05-20T21:46:41.801Z"
+    }
+  },
+  {
+    "model": "api.post",
+    "pk": 3,
+    "fields": {
+      "author": 2,
+      "text": "Jey user 1, I'm User 2",
+      "created": "2020-05-20T21:47:50.943Z"
+    }
+  }
+]

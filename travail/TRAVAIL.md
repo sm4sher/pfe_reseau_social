@@ -9,3 +9,19 @@ Ainsi, une organisation souhaitant deployer une instance de ce réseau social po
 Si besoin, il sera simple de développer de nouveaux modules pour répondre aux besoins de chaque organisation.
 
 Les frameworks utilisés seront Django pour le back-end et Vue.js pour le front-end.
+
+
+## Semaine 2
+
+Mise en place de Webpack et Vue.js avec Django (finalement utilisation de django-webpack-loader au moins pour l'instant)
+Début de la construction du front-end (components App, Post)
+Début api (login, register)
+
+
+## Semaine 3
+
+Construction du front-end (composant pour les posts)
+Mise en place API posts pour supporter le front-end
+Ebauche du design du site (voir screenshot)
+
+![ébauche du site](./ebauche.png)

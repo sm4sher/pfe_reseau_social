@@ -44,8 +44,9 @@ INSTALLED_APPS = [
     'webpack_loader',
 
     #local
-    #'api.apps.ApiConfig',
+    'api.apps.ApiConfig',
     'social',
+    #'api',
 ]
 
 MIDDLEWARE = [
@@ -129,16 +130,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-AUTH_USER_MODEL = 'social.User'
+AUTH_USER_MODEL = 'api.User'
 
-# REST_FRAMEWORK = {
+REST_FRAMEWORK = {
+    'DATETIME_FORMAT': '%s000' # '000' because javascript timestamp format...
 #     'DEFAULT_AUTHENTICATION_CLASSES': (
 #         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
 #     ),
 #     'DEFAULT_PERMISSION_CLASSES': (
 #         'rest_framework.permissions.IsAuthenticated',
 #     )
-# }
+}
 
 # OAUTH2_PROVIDER = {
 #     # this is the list of available scopes
