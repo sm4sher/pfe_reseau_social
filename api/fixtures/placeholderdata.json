@@ -41,7 +41,8 @@
     "fields": {
       "user": 1,
       "display_name": "User 1",
-      "bio": "Bonjour, je suis User 1"
+      "bio": "Bonjour, je suis User 1",
+      "picture": "profile_default.jpeg"
     }
   },
   {
@@ -50,7 +51,8 @@
     "fields": {
       "user": 2,
       "display_name": "User 2",
-      "bio": "Bonjour, je suis User 2"
+      "bio": "Bonjour, je suis User 2",
+      "picture": "profile_default.jpeg"
     }
   },
   {
@@ -76,7 +78,7 @@
     "pk": 3,
     "fields": {
       "author": 2,
-      "text": "Jey user 1, I'm User 2",
+      "text": "Hey user 1, I'm User 2",
       "created": "2020-05-20T21:47:50.943Z"
     }
   }

@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     #local
     'api.apps.ApiConfig',
     'social',
-    #'api',
 ]
 
 MIDDLEWARE = [
